@@ -20,7 +20,7 @@ namespace EmployeeManagement.APi.Controllers
             {
                 return Ok(await _employeeRepository.GetEmployees());
             }
-            catch (Exception ex)
+            catch (Exception)
             {
                 return StatusCode(StatusCodes.Status500InternalServerError,
                     "Error retrieving data from the database");
@@ -69,7 +69,6 @@ namespace EmployeeManagement.APi.Controllers
             }
         }
 
-
         [HttpPut("{id:int}")]
         public async Task<ActionResult<Employee>> UpdateEmployee(int id, Employee employee)
         {
@@ -95,7 +94,6 @@ namespace EmployeeManagement.APi.Controllers
             }
         }
         [HttpDelete("{id:int}")]
-
         public async Task<ActionResult<Employee>> DeleteEmployee(int id)
         {
             try
