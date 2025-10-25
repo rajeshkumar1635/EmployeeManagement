@@ -69,6 +69,8 @@ namespace EmployeeManagement.APi.Controllers
             }
         }
 
+<<<<<<< HEAD
+=======
         [HttpPut("{id:int}")]
         public async Task<ActionResult<Employee>> UpdateEmployee(int id,Employee employee)
         {
@@ -94,5 +96,6 @@ namespace EmployeeManagement.APi.Controllers
             }
         }
 
+>>>>>>> featurebranch
     }
 }
