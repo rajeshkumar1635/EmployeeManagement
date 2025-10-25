@@ -10,6 +10,6 @@ namespace EmployeeManagement.APi.Models
 
         Task<Employee> AddEmployee(Employee employee);
         Task<Employee> UpdateEmployee(Employee employee);
-        void DeleteEmployee(int employeeId);
+        Task<Employee> DeleteEmployee(int employeeId);
     }
 }
