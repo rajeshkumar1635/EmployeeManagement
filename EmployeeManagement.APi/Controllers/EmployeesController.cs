@@ -69,5 +69,33 @@ namespace EmployeeManagement.APi.Controllers
             }
         }
 
+<<<<<<< HEAD
+=======
+        [HttpPut("{id:int}")]
+        public async Task<ActionResult<Employee>> UpdateEmployee(int id,Employee employee)
+        {
+            try
+            {
+                if (id !=employee.EmployeeId)
+                {
+                    return BadRequest("Employee Id Mismatch");
+                }
+
+                var employeeToUpdate=_employeeRepository.GetEmployee(id);
+
+                if(employeeToUpdate == null)
+                {
+                    return NotFound($"Employee with Id ={id} not Found");
+                }
+               return await _employeeRepository.UpdateEmployee(employee);
+            }
+            catch (Exception)
+            {
+                return StatusCode(StatusCodes.Status500InternalServerError,
+                    "Error updating data from the database");
+            }
+        }
+
+>>>>>>> featurebranch
     }
 }
