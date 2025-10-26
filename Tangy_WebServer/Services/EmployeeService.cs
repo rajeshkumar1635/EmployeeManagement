@@ -10,9 +10,16 @@ namespace Tangy_WebServer.Services
             _httpClient = httpClient;
 
         }
+
+        public async Task<Employee> GetEmployee(int id)
+        {
+            return await _httpClient.GetFromJsonAsync<Employee>($"api/employees/{id}");
+        }
+
         public async Task<IEnumerable<Employee>> GetEmployees()
         {
             return await _httpClient.GetFromJsonAsync<Employee[]>("api/employees");
         }
+        
     }
 }
