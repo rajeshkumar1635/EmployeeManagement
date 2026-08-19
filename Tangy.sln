@@ -7,7 +7,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tangy_WebServer", "Tangy_We
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EmployeeManagementModels", "EmployeeManagementModels\EmployeeManagementModels.csproj", "{F384B45D-EEEA-47C2-8CA4-F6181A60F951}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmployeeManagement.APi", "EmployeeManagement.APi\EmployeeManagement.APi.csproj", "{76E30760-0631-4EBB-A7AB-DDDD69F4FF3A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EmployeeManagement.APi", "EmployeeManagement.APi\EmployeeManagement.APi.csproj", "{76E30760-0631-4EBB-A7AB-DDDD69F4FF3A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
